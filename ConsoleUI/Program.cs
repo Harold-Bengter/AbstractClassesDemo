@@ -8,6 +8,7 @@ namespace ConsoleUI
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             /*
@@ -32,7 +33,7 @@ namespace ConsoleUI
             */
 
             // Create a list of Vehicle called vehicles
-
+          
             /*
              * Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle (use explicit typing) but use constuctors from derived classes
              * - new it up as one of each derived class
@@ -46,6 +47,67 @@ namespace ConsoleUI
 
             // Call each of the drive methods for one car and one motorcycle
 
+           List<Vehicle> vehicles = new List<Vehicle>();
+
+
+            Motorcycle motorcycle1 = new Motorcycle()
+            {
+                Make = "Harley",
+                Model = "Hog",
+                Year = "1936",
+                Wheels = 2,
+            };
+            vehicles.Add(motorcycle1);
+
+            Motorcycle mc2 = new Motorcycle()
+            {
+                Make = "Triumph",
+                Model = "Spirtfire",
+                Year = "1968",
+                Wheels = 2,
+            };
+            vehicles.Add(mc2);
+
+            Car car1 = new Car()
+            {
+                Make = "Ford",
+                Model = "Fairlane",
+                Year = "1954",
+                hasAMotor = "V8",
+            };
+            vehicles.Add(car1);
+
+            Car c1 = new Car()
+            {
+                Make = "Hennessey",
+                Model = "Venom",
+                Year = "2017",
+                hasAMotor = "Ls",
+            };
+            vehicles.Add(c1);
+
+            foreach (var item in vehicles)
+            {
+                Console.WriteLine($"{item.Year} {item.Make} {item.Model}");
+                Console.WriteLine();
+            }
+
+            motorcycle1.DriveAbstract();
+            Console.WriteLine();
+
+            mc2.DriveVirtual();
+            Console.WriteLine();
+            
+            car1.DriveVirtual();
+            Console.WriteLine();
+
+            c1.DriveAbstract();
+            Console.WriteLine();
+
+
+
+
+  
             #endregion            
             Console.ReadLine();
         }
