@@ -55,7 +55,7 @@ namespace ConsoleUI
                 Make = "Harley",
                 Model = "Hog",
                 Year = "1936",
-                Wheels = 2,
+                Wheels = 2
             };
             vehicles.Add(motorcycle1);
 
@@ -64,7 +64,7 @@ namespace ConsoleUI
                 Make = "Triumph",
                 Model = "Spirtfire",
                 Year = "1968",
-                Wheels = 2,
+                Wheels = 2
             };
             vehicles.Add(mc2);
 
@@ -73,7 +73,7 @@ namespace ConsoleUI
                 Make = "Ford",
                 Model = "Fairlane",
                 Year = "1954",
-                hasAMotor = "V8",
+                hasAMotor = "V8"
             };
             vehicles.Add(car1);
 
@@ -82,7 +82,7 @@ namespace ConsoleUI
                 Make = "Hennessey",
                 Model = "Venom",
                 Year = "2017",
-                hasAMotor = "Ls",
+                hasAMotor = "Ls"
             };
             vehicles.Add(c1);
 

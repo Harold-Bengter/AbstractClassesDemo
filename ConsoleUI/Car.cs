@@ -11,6 +11,6 @@ namespace ConsoleUI
         public override void DriveAbstract()
         {
             Console.WriteLine($"This is a {Year} {Make} {Model} and has a {hasAMotor}. ");
-        } 
+        }
     }
 }
